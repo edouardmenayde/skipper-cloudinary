@@ -1,0 +1,19 @@
+{
+  "name": "skipper-cloudinary",
+  "version": "0.0.1",
+  "description": "Skipper adapter for cloudinary",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scrunshes/skipper-cloudinary.git"
+  },
+  "author": "Edouard MENAYDE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scrunshes/skipper-cloudinary/issues"
+  },
+  "homepage": "https://github.com/scrunshes/skipper-cloudinary#readme",
+  "dependencies": {
+    "cloudinary": "^1.8.0"
+  }
+}
