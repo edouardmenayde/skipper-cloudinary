@@ -14,7 +14,10 @@ req.file('awesomefile')
       adapter  : require('skipper-cloudinary'),
       key      : 'cloudinaryApiKey',
       secret   : 'cloudinarySecretKey',
-      cloudName: 'cloudinaryCloudName'
+      cloudName: 'cloudinaryCloudName',
+      uploadOptions: {
+        folder: 'awesomefolder'
+      }
     }, (error, uploadedFiles) => {
       uploadedFiles.forEach(uploadedFile => {
         console.log(uploadedFile); // contains regular meta
@@ -22,3 +25,12 @@ req.file('awesomefile')
       });
     });
 ```
+
+## Options
+
+| Option        | Type       | Description                                                                                                                                                                   |
+|---------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| key           | ((string)) | Api key of cloudinary                                                                                                                                                         |
+| secret        | ((string)) | Api secret of cloudinary                                                                                                                                                      |
+| cloudName     | ((string)) | Name of your cloudinary cloud                                                                                                                                                 |
+| uploadOptions | ((object)) | Options directly given to the cloudinary uploader. See the [Cloudinary documentation](http://cloudinary.com/documentation/image_upload_api_reference#upload) for all options. |
