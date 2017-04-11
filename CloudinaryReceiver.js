@@ -9,8 +9,6 @@ module.exports = function CloudinaryReceiver(cloudinary, options) {
   options.rowHandler = options.rowHandler || function () {
     };
 
-  options.uploadOptions = {};
-
   receiver._files = [];
 
   receiver._write = function onFile(file, encoding, done) {
