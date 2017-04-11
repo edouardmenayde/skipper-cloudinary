@@ -1,6 +1,6 @@
 {
   "name": "skipper-cloudinary",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Skipper adapter for cloudinary",
   "main": "index.js",
   "repository": {
